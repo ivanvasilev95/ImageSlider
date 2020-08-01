@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace ImageSliderApp
 {
@@ -18,6 +13,7 @@ namespace ImageSliderApp
 
         public static string CreateImageLabel(string file)
         {
+            // extract image name (with extension) from the full image path
             var fileLength = file.Length;
             var startIndex = file.LastIndexOf(@"\") + 1;
             var length = fileLength - startIndex;
