@@ -19,20 +19,14 @@ namespace ImageSliderApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (this.slider.ContainsPhotos)
-            {
                 this.slider.Previous();
                 this.LoadPhoto();
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (this.slider.ContainsPhotos)
-            {
                 this.slider.Next();
                 this.LoadPhoto();
-            }   
         }
 
         private void button3_Click(object sender, EventArgs e)
